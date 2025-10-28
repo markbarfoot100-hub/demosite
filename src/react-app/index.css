@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cosmic Cannabis Color Palette */
+  --cosmic-purple: hsl(280, 100%, 20%);
+  --cosmic-purple-light: hsl(280, 80%, 40%);
+  --cosmic-purple-bright: hsl(290, 100%, 60%);
+  --cosmic-green: hsl(120, 100%, 25%);
+  --cosmic-green-light: hsl(120, 80%, 40%);
+  --cosmic-green-bright: hsl(130, 100%, 50%);
+  --cosmic-pink: hsl(320, 100%, 60%);
+  --cosmic-pink-bright: hsl(330, 100%, 70%);
+  --cosmic-pink-neon: hsl(320, 100%, 80%);
+  
+  /* Background gradients */
+  --bg-cosmic: linear-gradient(135deg, var(--cosmic-purple) 0%, var(--cosmic-purple-light) 50%, var(--cosmic-green) 100%);
+  --bg-cosmic-alt: linear-gradient(45deg, var(--cosmic-green) 0%, var(--cosmic-purple-bright) 50%, var(--cosmic-pink) 100%);
+  
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Custom cosmic effects */
+.cosmic-glow {
+  box-shadow: 0 0 20px hsla(320, 100%, 60%, 0.5), 0 0 40px hsla(290, 100%, 60%, 0.3);
+}
+
+.cosmic-glow-green {
+  box-shadow: 0 0 20px hsla(130, 100%, 50%, 0.5), 0 0 40px hsla(120, 80%, 40%, 0.3);
+}
+
+.cosmic-glow-purple {
+  box-shadow: 0 0 20px hsla(280, 100%, 60%, 0.5), 0 0 40px hsla(290, 100%, 40%, 0.3);
+}
+
+.cosmic-text-glow {
+  text-shadow: 0 0 10px hsla(320, 100%, 80%, 0.8), 0 0 20px hsla(290, 100%, 60%, 0.5);
+}
+
+.cosmic-border {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, var(--cosmic-pink), var(--cosmic-purple-bright), var(--cosmic-green-bright)) 1;
+}
+
+@keyframes subtle-glow {
+  0%, 100% { box-shadow: 0 0 20px hsla(320, 100%, 60%, 0.3); }
+  50% { box-shadow: 0 0 25px hsla(320, 100%, 60%, 0.5); }
+}
+
+.subtle-glow-animation {
+  animation: subtle-glow 3s ease-in-out infinite;
+}
+
+/* Remove all moving animations */
+.float-animation {
+  /* Disabled for stability */
+}
+
+.pulse-glow-animation {
+  /* Disabled for stability */
+}
+
+.rotate-hue-animation {
+  /* Disabled for stability */
+}
+
+/* Cosmic backgrounds */
+.bg-cosmic {
+  background: var(--bg-cosmic);
+}
+
+.bg-cosmic-alt {
+  background: var(--bg-cosmic-alt);
+}
+
+.bg-cosmic-card {
+  background: linear-gradient(135deg, 
+    hsla(280, 60%, 10%, 0.9) 0%, 
+    hsla(290, 70%, 15%, 0.8) 50%, 
+    hsla(320, 80%, 12%, 0.9) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+/* Typography */
+.font-cosmic {
+  font-family: 'Orbitron', monospace;
+  font-weight: 600;
+}
+
+.font-cosmic-light {
+  font-family: 'Orbitron', monospace;
+  font-weight: 400;
+}
+
+.font-cosmic-bold {
+  font-family: 'Orbitron', monospace;
+  font-weight: 800;
+}
