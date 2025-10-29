@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Cannabis - Premium Medical Marijuana",
+  "short_name": "Cosmic Cannabis",
+  "description": "Premium medical marijuana dispensary with psychedelic vibes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "categories": ["medical", "health", "lifestyle"],
+  "icons": [
+    {
+      "src": "https://mocha-cdn.com/019a2ada-c91b-7c1b-9da0-94076d92107c/logo-psychedelic-leaf.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://mocha-cdn.com/019a2ada-c91b-7c1b-9da0-94076d92107c/logo-psychedelic-leaf.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://mocha-cdn.com/019a2ada-c91b-7c1b-9da0-94076d92107c/hero-psychedelic-cannabis.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Cosmic Cannabis Home Screen"
+    }
+  ],
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr"
+}
