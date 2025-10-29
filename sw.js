@@ -33,6 +33,12 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/demosite/sw.js')
+    .then(reg => console.log('Service Worker registered:', reg))
+    .catch(err => console.error('SW registration failed:', err));
+}
+
 // Fetch event
 self.addEventListener('fetch', (event) => {
   event.respondWith(
